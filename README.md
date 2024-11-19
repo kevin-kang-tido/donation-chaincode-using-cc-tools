@@ -73,3 +73,11 @@ You can reach GoLedger developers and `cc-tools` maintainers at our Discord - [J
 More documentation and details on `cc-tools` can be found at [https://goledger-cc-tools.readthedocs.io/en/latest/](https://goledger-cc-tools.readthedocs.io/en/latest/)
 
 For production deployment please consider using GoFabric - [https://gofabric.io](https://gofabric.io)
+
+
+
+### To testing 
+set up 3 organizatons 
+
+./startDev.sh
+

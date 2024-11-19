@@ -48,6 +48,11 @@ fi
 docker rmi $(docker images --quiet --filter "dangling=true")
 docker volume rm $(docker volume ls -qf dangling=true)
 
+# Bring down the Docker network before starting it again
+echo "Stopping and removing existing containers..."
+cd ./fabric; docker-compose down; cd ..
+
+
 # Script used to start the development environment.
 if [ ! -d "chaincode/vendor" ]; then
     cd ./chaincode; GOWORK=off go mod vendor; cd ..
